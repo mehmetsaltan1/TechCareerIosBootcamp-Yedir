@@ -16,6 +16,10 @@
 		9B3E63FA27ECD656006686DC /* YedirTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3E63F927ECD656006686DC /* YedirTests.swift */; };
 		9B3E640427ECD656006686DC /* YedirUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3E640327ECD656006686DC /* YedirUITests.swift */; };
 		9B3E640627ECD656006686DC /* YedirUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3E640527ECD656006686DC /* YedirUITestsLaunchTests.swift */; };
+		9B3E643327EE0A47006686DC /* food-detail-module in Resources */ = {isa = PBXBuildFile; fileRef = 9B3E642F27EE0A46006686DC /* food-detail-module */; };
+		9B3E643427EE0A47006686DC /* home-page-module in Resources */ = {isa = PBXBuildFile; fileRef = 9B3E643027EE0A46006686DC /* home-page-module */; };
+		9B3E643527EE0A47006686DC /* entity in Resources */ = {isa = PBXBuildFile; fileRef = 9B3E643127EE0A46006686DC /* entity */; };
+		9B3E643627EE0A47006686DC /* basket-page-module in Resources */ = {isa = PBXBuildFile; fileRef = 9B3E643227EE0A46006686DC /* basket-page-module */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		9B3E63FF27ECD656006686DC /* YedirUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YedirUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B3E640327ECD656006686DC /* YedirUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YedirUITests.swift; sourceTree = "<group>"; };
 		9B3E640527ECD656006686DC /* YedirUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YedirUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9B3E642F27EE0A46006686DC /* food-detail-module */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "food-detail-module"; sourceTree = "<group>"; };
+		9B3E643027EE0A46006686DC /* home-page-module */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "home-page-module"; sourceTree = "<group>"; };
+		9B3E643127EE0A46006686DC /* entity */ = {isa = PBXFileReference; lastKnownFileType = folder; path = entity; sourceTree = "<group>"; };
+		9B3E643227EE0A46006686DC /* basket-page-module */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "basket-page-module"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,10 @@
 		9B3E63E127ECD654006686DC /* Yedir */ = {
 			isa = PBXGroup;
 			children = (
+				9B3E643227EE0A46006686DC /* basket-page-module */,
+				9B3E643127EE0A46006686DC /* entity */,
+				9B3E642F27EE0A46006686DC /* food-detail-module */,
+				9B3E643027EE0A46006686DC /* home-page-module */,
 				9B3E63E227ECD654006686DC /* AppDelegate.swift */,
 				9B3E63E427ECD654006686DC /* SceneDelegate.swift */,
 				9B3E63E627ECD654006686DC /* ViewController.swift */,
@@ -231,7 +243,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B3E643627EE0A47006686DC /* basket-page-module in Resources */,
+				9B3E643427EE0A47006686DC /* home-page-module in Resources */,
 				9B3E63EF27ECD656006686DC /* LaunchScreen.storyboard in Resources */,
+				9B3E643327EE0A47006686DC /* food-detail-module in Resources */,
+				9B3E643527EE0A47006686DC /* entity in Resources */,
 				9B3E63EC27ECD656006686DC /* Assets.xcassets in Resources */,
 				9B3E63EA27ECD654006686DC /* Main.storyboard in Resources */,
 			);
