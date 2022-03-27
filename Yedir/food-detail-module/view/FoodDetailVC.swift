@@ -1,19 +1,21 @@
 //
-//  CartPageVC.swift
-//  
+//  FoodDetailVC.swift
+//  Yedir
 //
 //  Created by Mehmet Saltan on 26.03.2022.
 //
 
 import UIKit
 
-class CartPageVC: UIViewController {
-
+class FoodDetailVC: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Do any additional setup after loading the view.
     }
     
 
+ 
 
 }
