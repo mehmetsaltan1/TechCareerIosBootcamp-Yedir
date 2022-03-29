@@ -12,17 +12,23 @@ class HomePageInteractor:PresenterToInteractorHomePageProtocol{
     var homePagePresenter: InteractorToPresenterHomePageProtocol?
     
     func getAllFoods() {
-        AF.request("http://kasimadalan.pe.hu/yemekler/tumYemekleriGetir.php",method: .get).responseJSON { (response) in
+         print("tetiklendi")
+    AF.request("http://kasimadalan.pe.hu/yemekler/tumYemekleriGetir.php",method: .get).response { response in
             if let data = response.data{
+                print("1inci ife girdi")
                 do {
-                    let res = try JSONDecoder().decode(FoodsResponse.self, from: data)
-                    var list = [Foods]()
-                    if let gList = res.foods{
-                        list = gList
+                    let cevap = try JSONDecoder().decode(FoodsResponse.self, from: data)
+                    if let gelenListe = cevap.yemekler{
+                        print("2inci ife girdi")
+                        self.homePagePresenter?.sendDataToPresenter(foodsList: gelenListe)
+                        print(gelenListe.first!)
                     }
-                    self.homePagePresenter?.sendDataToPresenter(foodsList: list)
+                    else {
+                        print("null geldi")
+                    }
+         
                 }catch{
-                    print(String(describing: error))
+                    print(error.localizedDescription)
                 }
             }
         }

@@ -10,8 +10,6 @@ import Foundation
 class HomePagePresenter:ViewToPresenterHomePageProtocol{
     var homePageView: PresenterToViewHomePageProtocol?
     
-    var homepageInteractor: PresenterToInteractorHomePageProtocol?
-    
     var homePageInteractor: PresenterToInteractorHomePageProtocol?
     
     func getFoods() {

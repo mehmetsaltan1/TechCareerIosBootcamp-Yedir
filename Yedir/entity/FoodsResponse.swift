@@ -7,7 +7,7 @@
 
 import Foundation
 
-class FoodsResponse:Codable{
-    var foods:[Foods]?
-    var success:Int?
+class FoodsResponse:Codable {
+    var yemekler:[Foods]?
+    var succes:Int?
 }
