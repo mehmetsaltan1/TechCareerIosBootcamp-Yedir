@@ -31,6 +31,8 @@
 		9BA813CE27F376D900DD0533 /* CartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA813CD27F376D900DD0533 /* CartPresenter.swift */; };
 		9BA813D027F3771A00DD0533 /* CartRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA813CF27F3771A00DD0533 /* CartRouter.swift */; };
 		9BA813D227F377A500DD0533 /* CartInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA813D127F377A500DD0533 /* CartInteractor.swift */; };
+		9BA813D427F4DA8300DD0533 /* FoodCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA813D327F4DA8300DD0533 /* FoodCollectionViewCell.swift */; };
+		9BA813D727F4E94300DD0533 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9BA813D627F4E94300DD0533 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,7 @@
 		9BA813CD27F376D900DD0533 /* CartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartPresenter.swift; sourceTree = "<group>"; };
 		9BA813CF27F3771A00DD0533 /* CartRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartRouter.swift; sourceTree = "<group>"; };
 		9BA813D127F377A500DD0533 /* CartInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartInteractor.swift; sourceTree = "<group>"; };
+		9BA813D327F4DA8300DD0533 /* FoodCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BA813D727F4E94300DD0533 /* Kingfisher in Frameworks */,
 				9B2AA31627F04AD400BC977F /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,7 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				9B2AA2F427EF5A1C00BC977F /* presenter */,
-				9B2AA2F327EF59FE00BC977F /* tableview */,
+				9B2AA2F327EF59FE00BC977F /* collectionView */,
 				9B2AA2F227EF59F700BC977F /* router */,
 				9B2AA2F127EF59EF00BC977F /* interactor */,
 				9B2AA2F027EF59E500BC977F /* protocols */,
@@ -175,11 +179,12 @@
 			path = router;
 			sourceTree = "<group>";
 		};
-		9B2AA2F327EF59FE00BC977F /* tableview */ = {
+		9B2AA2F327EF59FE00BC977F /* collectionView */ = {
 			isa = PBXGroup;
 			children = (
+				9BA813D327F4DA8300DD0533 /* FoodCollectionViewCell.swift */,
 			);
-			path = tableview;
+			path = collectionView;
 			sourceTree = "<group>";
 		};
 		9B2AA2F427EF5A1C00BC977F /* presenter */ = {
@@ -349,6 +354,7 @@
 			name = Yedir;
 			packageProductDependencies = (
 				9B2AA31527F04AD400BC977F /* Alamofire */,
+				9BA813D627F4E94300DD0533 /* Kingfisher */,
 			);
 			productName = Yedir;
 			productReference = 9B3E63DF27ECD654006686DC /* Yedir.app */;
@@ -424,6 +430,7 @@
 			mainGroup = 9B3E63D627ECD654006686DC;
 			packageReferences = (
 				9B2AA31427F04AD400BC977F /* XCRemoteSwiftPackageReference "Alamofire" */,
+				9BA813D527F4E94300DD0533 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 9B3E63E027ECD654006686DC /* Products */;
 			projectDirPath = "";
@@ -484,6 +491,7 @@
 				9BA813CE27F376D900DD0533 /* CartPresenter.swift in Sources */,
 				9BA813CC27F375F300DD0533 /* CartProtocols.swift in Sources */,
 				9B2AA30F27F03A4400BC977F /* HomePageRouter.swift in Sources */,
+				9BA813D427F4DA8300DD0533 /* FoodCollectionViewCell.swift in Sources */,
 				9B2AA30B27F039BA00BC977F /* CartFoods.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -852,6 +860,14 @@
 				kind = branch;
 			};
 		};
+		9BA813D527F4E94300DD0533 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -859,6 +875,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9B2AA31427F04AD400BC977F /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		9BA813D627F4E94300DD0533 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9BA813D527F4E94300DD0533 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

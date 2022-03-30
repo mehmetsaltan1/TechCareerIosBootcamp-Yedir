@@ -21,7 +21,7 @@ class HomePageInteractor:PresenterToInteractorHomePageProtocol{
                     if let gelenListe = cevap.yemekler{
                         print("2inci ife girdi")
                         self.homePagePresenter?.sendDataToPresenter(foodsList: gelenListe)
-                        print(gelenListe.first!)
+                        
                     }
                     else {
                         print("null geldi")

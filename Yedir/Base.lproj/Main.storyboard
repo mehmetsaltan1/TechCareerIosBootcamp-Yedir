@@ -20,7 +20,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sW0-8y-0MG">
                                 <rect key="frame" x="0.0" y="88" width="414" height="814"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" name="myPaletWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pMe-mj-rBG">
                                     <size key="itemSize" width="200" height="300"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -28,18 +28,97 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="lGe-yo-hIc">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="yemekHucre" id="lGe-yo-hIc" customClass="FoodCollectionViewCell" customModule="Yedir" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="300"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="s7S-3u-RVs">
-                                            <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="125" height="300"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Smc-j2-UPJ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="125" height="300"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nkM-3P-acg">
+                                                            <rect key="frame" x="0.0" y="95" width="125" height="205"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXF-NF-ush">
+                                                                    <rect key="frame" x="8" y="74" width="40" height="18"/>
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                                    <color key="textColor" name="myPaletRed"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DS9-Ub-rdP">
+                                                                    <rect key="frame" x="8" y="171" width="37.5" height="18"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPs-cf-JW1">
+                                                                    <rect key="frame" x="77" y="157" width="32" height="32"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="32" id="TBR-HB-Qgn"/>
+                                                                        <constraint firstAttribute="width" constant="32" id="Twn-qe-JHO"/>
+                                                                    </constraints>
+                                                                    <color key="tintColor" name="myPaletRed"/>
+                                                                    <state key="normal" title="Button"/>
+                                                                    <buttonConfiguration key="configuration" style="filled" title="+">
+                                                                        <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                                                        <color key="baseBackgroundColor" name="myPaletRed"/>
+                                                                    </buttonConfiguration>
+                                                                    <connections>
+                                                                        <action selector="sepeteEkleButton:" destination="lGe-yo-hIc" eventType="touchUpInside" id="zig-zb-302"/>
+                                                                    </connections>
+                                                                </button>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstItem="hXF-NF-ush" firstAttribute="leading" secondItem="nkM-3P-acg" secondAttribute="leading" constant="8" id="Ckf-SW-4oc"/>
+                                                                <constraint firstAttribute="bottom" secondItem="hPs-cf-JW1" secondAttribute="bottom" constant="16" id="G2D-IP-LsO"/>
+                                                                <constraint firstAttribute="bottom" secondItem="DS9-Ub-rdP" secondAttribute="bottom" constant="16" id="SBk-U0-GZE"/>
+                                                                <constraint firstAttribute="trailing" secondItem="hPs-cf-JW1" secondAttribute="trailing" constant="16" id="T2v-sL-yPj"/>
+                                                                <constraint firstItem="DS9-Ub-rdP" firstAttribute="leading" secondItem="nkM-3P-acg" secondAttribute="leading" constant="8" id="YbV-RH-wIw"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ayran" translatesAutoresizingMaskIntoConstraints="NO" id="sxM-wp-GCZ">
+                                                            <rect key="frame" x="0.0" y="30" width="125" height="125"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="125" id="TDx-Sp-ieo"/>
+                                                                <constraint firstAttribute="width" constant="125" id="nzo-HH-kBa"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" name="myPaletWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="nkM-3P-acg" firstAttribute="leading" secondItem="Smc-j2-UPJ" secondAttribute="leading" id="BA6-qR-ozB"/>
+                                                        <constraint firstItem="sxM-wp-GCZ" firstAttribute="leading" secondItem="Smc-j2-UPJ" secondAttribute="leading" id="Kve-Yc-Po6"/>
+                                                        <constraint firstItem="sxM-wp-GCZ" firstAttribute="top" secondItem="Smc-j2-UPJ" secondAttribute="top" constant="30" id="Zsa-2o-JY6"/>
+                                                        <constraint firstItem="hXF-NF-ush" firstAttribute="bottom" secondItem="sxM-wp-GCZ" secondAttribute="bottom" constant="32" id="fqb-bP-19z"/>
+                                                        <constraint firstItem="nkM-3P-acg" firstAttribute="top" secondItem="Smc-j2-UPJ" secondAttribute="top" constant="95" id="jf2-ef-jDq"/>
+                                                        <constraint firstAttribute="trailing" secondItem="nkM-3P-acg" secondAttribute="trailing" id="k57-4O-DL6"/>
+                                                        <constraint firstAttribute="trailing" secondItem="sxM-wp-GCZ" secondAttribute="trailing" id="tPJ-gY-Yyn"/>
+                                                        <constraint firstAttribute="bottom" secondItem="nkM-3P-acg" secondAttribute="bottom" id="v2B-71-uDf"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="Smc-j2-UPJ" secondAttribute="bottom" id="AwX-JM-5fJ"/>
+                                                <constraint firstAttribute="trailing" secondItem="Smc-j2-UPJ" secondAttribute="trailing" id="GDr-am-2p7"/>
+                                                <constraint firstItem="Smc-j2-UPJ" firstAttribute="top" secondItem="s7S-3u-RVs" secondAttribute="top" id="esh-82-V3D"/>
+                                                <constraint firstItem="Smc-j2-UPJ" firstAttribute="leading" secondItem="s7S-3u-RVs" secondAttribute="leading" id="pYM-7e-gax"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="sepeteEkleBtn" destination="hPs-cf-JW1" id="Vrj-G7-PDK"/>
+                                            <outlet property="view" destination="nkM-3P-acg" id="QEZ-ll-peh"/>
+                                            <outlet property="yemekAdiLabel" destination="hXF-NF-ush" id="cvw-zr-Q9V"/>
+                                            <outlet property="yemekFiyatLabel" destination="DS9-Ub-rdP" id="btx-hk-Ofo"/>
+                                            <outlet property="yemekResimImageView" destination="sxM-wp-GCZ" id="6Kj-Is-QyV"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Juk-rQ-XTk">
-                                <rect key="frame" x="332" y="798" width="50" height="50"/>
+                                <rect key="frame" x="332" y="814" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="5gW-gA-6XK"/>
                                     <constraint firstAttribute="width" constant="50" id="MZn-o3-jLO"/>
@@ -60,19 +139,20 @@
                             <constraint firstItem="sW0-8y-0MG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9XN-qb-lHF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sW0-8y-0MG" secondAttribute="trailing" id="Vqz-CD-VjA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sW0-8y-0MG" secondAttribute="bottom" constant="-40" id="j0Q-m5-2Hq"/>
-                            <constraint firstAttribute="bottom" secondItem="Juk-rQ-XTk" secondAttribute="bottom" constant="48" id="sWp-y4-uFp"/>
+                            <constraint firstAttribute="bottom" secondItem="Juk-rQ-XTk" secondAttribute="bottom" constant="32" id="sWp-y4-uFp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Juk-rQ-XTk" secondAttribute="trailing" constant="32" id="yfo-3C-HYK"/>
                             <constraint firstItem="sW0-8y-0MG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="z8J-NU-7g1"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="YEDİR" id="B6m-c0-rMi"/>
                     <connections>
+                        <outlet property="yemeklerCollectionView" destination="sW0-8y-0MG" id="3BS-Ls-j8A"/>
                         <segue destination="qkS-DM-hZr" kind="showDetail" identifier="toDetail" id="XQC-UE-de5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="738" y="-174"/>
+            <point key="canvasLocation" x="737.68115942028987" y="-174.10714285714286"/>
         </scene>
         <!--Cart PageVC-->
         <scene sceneID="Kxv-zH-guc">
