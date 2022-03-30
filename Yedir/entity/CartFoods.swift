@@ -8,19 +8,19 @@
 import Foundation
 
 class CartFoods:Codable{
-    var cart_food_id:String?
-    var food_name:String?
-    var food_image_name:String?
-    var food_price:String?
-    var food_total:String?
-    var username:String?
+    var sepet_yemek_id:String?
+    var yemek_adi:String?
+    var yemek_resim_adi:String?
+    var yemek_fiyat:String?
+    var yemek_siparis_adet:String?
+    var kullanici_adi:String?
     
-    init(cart_food_id:String,food_name:String,food_image_name:String,food_price:String,food_total:String,username:String) {
-        self.cart_food_id = cart_food_id
-        self.food_name = food_name
-        self.food_image_name = food_image_name
-        self.food_price = food_price
-        self.food_total = food_total
-        self.username = username
-    }
+    init(sepet_yemek_id:String,yemek_adi:String,yemek_resim_adi:String,yemek_fiyat:String,yemek_siparis_adet:String,kullanici_adi:String) {
+          self.sepet_yemek_id = sepet_yemek_id
+          self.yemek_adi = yemek_adi
+          self.yemek_resim_adi = yemek_resim_adi
+          self.yemek_fiyat = yemek_fiyat
+          self.yemek_siparis_adet = yemek_siparis_adet
+          self.kullanici_adi = kullanici_adi
+      }
 }

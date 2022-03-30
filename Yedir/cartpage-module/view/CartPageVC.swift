@@ -8,22 +8,23 @@
 import UIKit
 
 class CartPageVC: UIViewController {
+       
+       var foodsList = [CartFoods]()
+       var cartPresenterObject :ViewToPresenterCartProtocol?
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+       override func viewDidLoad() {
+           super.viewDidLoad()
+           CartRouter.createModule(ref: self)
+           cartPresenterObject?.getFoods(kullanici_adi:"mehmet_saltan")
+       }
+       
+       override func viewWillAppear(_ animated: Bool) {
+           cartPresenterObject?.getFoods(kullanici_adi:"mehmet_saltan")
+       }
 
-        // Do any additional setup after loading the view.
+}
+extension CartPageVC :PresenterToViewCartProtocol{
+    func sendDataToView(foodList: Array<CartFoods>) {
+        self.foodsList = foodList
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

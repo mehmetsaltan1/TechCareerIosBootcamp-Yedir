@@ -50,7 +50,7 @@
                                     <color key="baseBackgroundColor" name="myPaletRed"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="qkS-DM-hZr" kind="presentation" id="TS5-W0-e0A"/>
+                                    <segue destination="VwN-W2-B0S" kind="show" id="Vp1-P4-WMb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -160,14 +160,11 @@
             <point key="canvasLocation" x="-175.36231884057972" y="-174.10714285714286"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="TS5-W0-e0A"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="ayran" width="256" height="256"/>
         <image name="cart.fill" catalog="system" width="128" height="102"/>
         <namedColor name="myPaletRed">
-            <color red="0.85098039215686272" green="0.23921568627450979" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.85100001096725464" green="0.23899999260902405" blue="0.10199999809265137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="myPaletWhite">
             <color red="0.94900000095367432" green="0.94900000095367432" blue="0.94900000095367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
