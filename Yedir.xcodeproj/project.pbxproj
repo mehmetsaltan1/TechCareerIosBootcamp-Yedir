@@ -33,6 +33,7 @@
 		9BA813D227F377A500DD0533 /* CartInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA813D127F377A500DD0533 /* CartInteractor.swift */; };
 		9BA813D427F4DA8300DD0533 /* FoodCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA813D327F4DA8300DD0533 /* FoodCollectionViewCell.swift */; };
 		9BA813D727F4E94300DD0533 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9BA813D627F4E94300DD0533 /* Kingfisher */; };
+		9BA813DA27F6110F00DD0533 /* SepetYemeklerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA813D927F6110F00DD0533 /* SepetYemeklerTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		9BA813CF27F3771A00DD0533 /* CartRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartRouter.swift; sourceTree = "<group>"; };
 		9BA813D127F377A500DD0533 /* CartInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartInteractor.swift; sourceTree = "<group>"; };
 		9BA813D327F4DA8300DD0533 /* FoodCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCollectionViewCell.swift; sourceTree = "<group>"; };
+		9BA813D927F6110F00DD0533 /* SepetYemeklerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepetYemeklerTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 		9B2AA2EC27EF597200BC977F /* cartpage-module */ = {
 			isa = PBXGroup;
 			children = (
+				9BA813D827F60FA100DD0533 /* tableview */,
 				9B2AA2FE27EF5A7D00BC977F /* interactor */,
 				9B2AA2FD27EF5A7400BC977F /* presenter */,
 				9B2AA2FC27EF5A6800BC977F /* protocols */,
@@ -336,6 +339,14 @@
 			path = YedirUITests;
 			sourceTree = "<group>";
 		};
+		9BA813D827F60FA100DD0533 /* tableview */ = {
+			isa = PBXGroup;
+			children = (
+				9BA813D927F6110F00DD0533 /* SepetYemeklerTableViewCell.swift */,
+			);
+			path = tableview;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -475,6 +486,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BA813DA27F6110F00DD0533 /* SepetYemeklerTableViewCell.swift in Sources */,
 				9B2AA30927F039AD00BC977F /* FoodsResponse.swift in Sources */,
 				9B3E63E327ECD654006686DC /* AppDelegate.swift in Sources */,
 				9B2AA30427F038CB00BC977F /* HomePageProtocols.swift in Sources */,
