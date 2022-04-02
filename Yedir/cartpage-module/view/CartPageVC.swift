@@ -19,6 +19,7 @@ class CartPageVC: UIViewController {
            super.viewDidLoad()
            sepetYemeklerTableView.delegate = self
            sepetYemeklerTableView.dataSource = self
+           sepetYemeklerTableView.layer.cornerRadius = 32
            CartRouter.createModule(ref: self)
            lblTitle.text = "Yemek \n ve İçecek"
            cartPresenterObject?.getFoods(kullanici_adi:"mehmet_saltan")
@@ -48,7 +49,9 @@ extension CartPageVC:UITableViewDelegate,UITableViewDataSource{
         cell.lblYemekAdet.text = food.yemek_siparis_adet!
         cell.lblYemekFiyat.text = "₺ \(food.yemek_fiyat!)"
         cell.view.layer.cornerRadius = 16
-        
+        if let yemekFiyat = food.yemek_fiyat {
+        cell.lblKazanc.text = "Bu üründen kazancın \(Int(yemekFiyat)!/2) ₺"
+        }
         if let url = URL(string: "http://kasimadalan.pe.hu/yemekler/resimler/\(food.yemek_resim_adi!)"){
              DispatchQueue.main.async {
                 cell.yemekImageView.kf.setImage(with: url)
