@@ -34,6 +34,8 @@
 		9BA813D427F4DA8300DD0533 /* FoodCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA813D327F4DA8300DD0533 /* FoodCollectionViewCell.swift */; };
 		9BA813D727F4E94300DD0533 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9BA813D627F4E94300DD0533 /* Kingfisher */; };
 		9BA813DA27F6110F00DD0533 /* SepetYemeklerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA813D927F6110F00DD0533 /* SepetYemeklerTableViewCell.swift */; };
+		9BA813DC27F88A6700DD0533 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BA813DB27F88A6600DD0533 /* GoogleService-Info.plist */; };
+		9BA813DF27F88E0500DD0533 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 9BA813DE27F88E0500DD0533 /* FirebaseDatabase */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,7 @@
 		9BA813D127F377A500DD0533 /* CartInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartInteractor.swift; sourceTree = "<group>"; };
 		9BA813D327F4DA8300DD0533 /* FoodCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCollectionViewCell.swift; sourceTree = "<group>"; };
 		9BA813D927F6110F00DD0533 /* SepetYemeklerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepetYemeklerTableViewCell.swift; sourceTree = "<group>"; };
+		9BA813DB27F88A6600DD0533 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BA813DF27F88E0500DD0533 /* FirebaseDatabase in Frameworks */,
 				9BA813D727F4E94300DD0533 /* Kingfisher in Frameworks */,
 				9B2AA31627F04AD400BC977F /* Alamofire in Frameworks */,
 			);
@@ -318,6 +322,7 @@
 				9B3E63EB27ECD656006686DC /* Assets.xcassets */,
 				9B3E63ED27ECD656006686DC /* LaunchScreen.storyboard */,
 				9B3E63F027ECD656006686DC /* Info.plist */,
+				9BA813DB27F88A6600DD0533 /* GoogleService-Info.plist */,
 			);
 			path = Yedir;
 			sourceTree = "<group>";
@@ -366,6 +371,7 @@
 			packageProductDependencies = (
 				9B2AA31527F04AD400BC977F /* Alamofire */,
 				9BA813D627F4E94300DD0533 /* Kingfisher */,
+				9BA813DE27F88E0500DD0533 /* FirebaseDatabase */,
 			);
 			productName = Yedir;
 			productReference = 9B3E63DF27ECD654006686DC /* Yedir.app */;
@@ -442,6 +448,7 @@
 			packageReferences = (
 				9B2AA31427F04AD400BC977F /* XCRemoteSwiftPackageReference "Alamofire" */,
 				9BA813D527F4E94300DD0533 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				9BA813DD27F88E0500DD0533 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 9B3E63E027ECD654006686DC /* Products */;
 			projectDirPath = "";
@@ -460,6 +467,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B3E63EF27ECD656006686DC /* LaunchScreen.storyboard in Resources */,
+				9BA813DC27F88A6700DD0533 /* GoogleService-Info.plist in Resources */,
 				9B3E63EC27ECD656006686DC /* Assets.xcassets in Resources */,
 				9B3E63EA27ECD654006686DC /* Main.storyboard in Resources */,
 			);
@@ -880,6 +888,14 @@
 				kind = branch;
 			};
 		};
+		9BA813DD27F88E0500DD0533 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -892,6 +908,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9BA813D527F4E94300DD0533 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		9BA813DE27F88E0500DD0533 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9BA813DD27F88E0500DD0533 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -129,7 +129,7 @@
                                     <color key="baseBackgroundColor" name="myPaletRed"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="qkS-DM-hZr" kind="show" id="H6i-NA-Z2M"/>
+                                    <segue destination="VwN-W2-B0S" kind="show" id="Vp1-P4-WMb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -163,26 +163,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kek" translatesAutoresizingMaskIntoConstraints="NO" id="rsH-sQ-L06">
-                                <rect key="frame" x="184" y="44" width="280" height="200"/>
+                                <rect key="frame" x="184" y="88" width="280" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="J15-cP-ACe"/>
                                     <constraint firstAttribute="width" constant="280" id="fEv-fp-TMB"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yemek ve İçecek" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkW-FM-JiE">
-                                <rect key="frame" x="0.0" y="84" width="269.5" height="42"/>
+                                <rect key="frame" x="0.0" y="128" width="269.5" height="42"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sizin için 14 farklı ürün !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QP1-ZL-a8W">
-                                <rect key="frame" x="12" y="142" width="213" height="25.5"/>
+                                <rect key="frame" x="12" y="186" width="213" height="25.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="e8A-Lc-A9g">
-                                <rect key="frame" x="0.0" y="244" width="414" height="658"/>
+                                <rect key="frame" x="0.0" y="288" width="414" height="614"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="sepetYemekHucre" id="Mgg-k6-V4o" customClass="SepetYemeklerTableViewCell" customModule="Yedir" customModuleProvider="target">
@@ -380,9 +380,7 @@
                                         </constraints>
                                         <color key="tintColor" name="myPaletRed"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="SEPETE EKLE">
-                                            <color key="baseBackgroundColor" name="myPaletRed"/>
-                                        </buttonConfiguration>
+                                        <buttonConfiguration key="configuration" style="filled" title="SEPETE EKLE"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGp-jX-fjc">
                                         <rect key="frame" x="276.5" y="15" width="41.5" height="20.5"/>
@@ -528,9 +526,6 @@
             <point key="canvasLocation" x="-175.36231884057972" y="-174.10714285714286"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="XQC-UE-de5"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="ayran" width="256" height="256"/>
         <image name="cart.fill" catalog="system" width="128" height="102"/>
