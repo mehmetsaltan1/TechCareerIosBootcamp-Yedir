@@ -47,11 +47,12 @@ extension CartPageVC:UITableViewDelegate,UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier:"sepetYemekHucre",for: indexPath ) as! SepetYemeklerTableViewCell
         cell.lblYemekAdi.text = food.yemek_adi!
         cell.lblYemekAdet.text = food.yemek_siparis_adet!
-        cell.lblYemekFiyat.text = "₺ \(food.yemek_fiyat!)"
+        cell.lblYemekFiyat.text = "₺ \(Int(food.yemek_fiyat!)!*Int(food.yemek_siparis_adet!)!)"
         cell.view.layer.cornerRadius = 16
         if let yemekFiyat = food.yemek_fiyat {
         cell.lblKazanc.text = "Bu üründen kazancın \(Int(yemekFiyat)!/2) ₺"
         }
+
         if let url = URL(string: "http://kasimadalan.pe.hu/yemekler/resimler/\(food.yemek_resim_adi!)"){
              DispatchQueue.main.async {
                 cell.yemekImageView.kf.setImage(with: url)

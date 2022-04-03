@@ -108,7 +108,6 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <connections>
-                                            <outlet property="sepeteEkleBtn" destination="hPs-cf-JW1" id="Vrj-G7-PDK"/>
                                             <outlet property="view" destination="nkM-3P-acg" id="QEZ-ll-peh"/>
                                             <outlet property="yemekAdiLabel" destination="hXF-NF-ush" id="cvw-zr-Q9V"/>
                                             <outlet property="yemekFiyatLabel" destination="DS9-Ub-rdP" id="btx-hk-Ofo"/>
@@ -315,38 +314,38 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kategori" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wB3-Np-azc">
-                                        <rect key="frame" x="248" y="50" width="69.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <rect key="frame" x="248" y="36" width="87.5" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yöre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCc-oe-YWI">
-                                        <rect key="frame" x="248" y="107" width="37" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <rect key="frame" x="248" y="105" width="46.5" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e67-sK-NfW">
-                                        <rect key="frame" x="248" y="78.5" width="44.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <rect key="frame" x="248" y="70.5" width="56" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                         <color key="textColor" name="myPaletRed"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kalori" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acf-At-Aew">
-                                        <rect key="frame" x="248" y="164" width="47" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <rect key="frame" x="248" y="174" width="59" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Nb-xe-IMd">
-                                        <rect key="frame" x="248" y="135.5" width="44.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <rect key="frame" x="248" y="139.5" width="56" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                         <color key="textColor" name="myPaletRed"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LNt-Ik-lbB">
-                                        <rect key="frame" x="248" y="192.5" width="44.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <rect key="frame" x="248" y="208.5" width="56" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                         <color key="textColor" name="myPaletRed"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -362,7 +361,7 @@
                                     <constraint firstItem="6Nb-xe-IMd" firstAttribute="leading" secondItem="lmh-CJ-VI5" secondAttribute="trailing" constant="32" id="DyN-sk-Ulg"/>
                                     <constraint firstItem="LNt-Ik-lbB" firstAttribute="top" secondItem="acf-At-Aew" secondAttribute="bottom" constant="8" id="HmV-ER-DEK"/>
                                     <constraint firstItem="LNt-Ik-lbB" firstAttribute="leading" secondItem="lmh-CJ-VI5" secondAttribute="trailing" constant="32" id="Mrp-WZ-4a8"/>
-                                    <constraint firstItem="wB3-Np-azc" firstAttribute="top" secondItem="hQj-g7-1PM" secondAttribute="top" constant="50" id="SZL-Bm-HTZ"/>
+                                    <constraint firstItem="wB3-Np-azc" firstAttribute="top" secondItem="hQj-g7-1PM" secondAttribute="top" constant="36" id="SZL-Bm-HTZ"/>
                                     <constraint firstItem="bCc-oe-YWI" firstAttribute="leading" secondItem="lmh-CJ-VI5" secondAttribute="trailing" constant="32" id="YKs-t0-9Qw"/>
                                     <constraint firstItem="bCc-oe-YWI" firstAttribute="top" secondItem="e67-sK-NfW" secondAttribute="bottom" constant="8" id="YQz-nu-9WE"/>
                                     <constraint firstItem="e67-sK-NfW" firstAttribute="leading" secondItem="lmh-CJ-VI5" secondAttribute="trailing" constant="32" id="bcs-Jj-4lr"/>
@@ -378,6 +377,9 @@
                                         <color key="tintColor" name="myPaletRed"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="SEPETE EKLE"/>
+                                        <connections>
+                                            <action selector="btnSepeteEkle:" destination="qkS-DM-hZr" eventType="touchUpInside" id="SJ3-3L-9an"/>
+                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ySD-cX-fsK">
                                         <rect key="frame" x="264" y="0.0" width="70" height="50"/>
@@ -437,6 +439,9 @@
                                             <color key="baseForegroundColor" name="myPaletRed"/>
                                             <color key="baseBackgroundColor" systemColor="systemGray5Color"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonDecrease:" destination="qkS-DM-hZr" eventType="touchUpInside" id="LLW-qt-qTx"/>
+                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hFx-yy-X8V">
                                         <rect key="frame" x="45" y="0.0" width="45" height="40"/>
@@ -469,6 +474,9 @@
                                             <color key="baseForegroundColor" name="myPaletRed"/>
                                             <color key="baseBackgroundColor" systemColor="systemGray5Color"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonIncrease:" destination="qkS-DM-hZr" eventType="touchUpInside" id="bZ6-Nt-1I2"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -503,12 +511,15 @@
                     <navigationItem key="navigationItem" id="Rqs-RZ-cuE"/>
                     <connections>
                         <outlet property="gelenYemekImageView" destination="lmh-CJ-VI5" id="IHb-hv-RxC"/>
+                        <outlet property="lblAdet" destination="MTC-wI-CMb" id="Gc4-ll-Wxa"/>
                         <outlet property="lblKaloriName" destination="LNt-Ik-lbB" id="x77-qM-cCj"/>
                         <outlet property="lblKategoriName" destination="e67-sK-NfW" id="taB-wN-zba"/>
+                        <outlet property="lblTotalTutar" destination="fhk-Pd-Pdc" id="jKd-b5-TcK"/>
                         <outlet property="lblYemekAciklama" destination="p0z-u7-dqM" id="GdB-qO-hcB"/>
                         <outlet property="lblYemekAdi" destination="VXh-az-HDO" id="z2V-9a-m7x"/>
                         <outlet property="lblYemekFiyat" destination="z43-lC-T37" id="qNa-EZ-Te1"/>
                         <outlet property="lblYoreName" destination="6Nb-xe-IMd" id="aiv-jG-f1S"/>
+                        <outlet property="totalTutarView" destination="ySD-cX-fsK" id="yz7-gf-GTZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qfA-m2-XVj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

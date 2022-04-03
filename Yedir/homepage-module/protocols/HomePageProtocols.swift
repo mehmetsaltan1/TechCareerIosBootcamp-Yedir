@@ -10,13 +10,13 @@ import Foundation
 protocol ViewToPresenterHomePageProtocol {
     var homePageView:PresenterToViewHomePageProtocol?{get set}
     var homePageInteractor:PresenterToInteractorHomePageProtocol?{get set}
-    
+    func add(yemekAdi:String,yemekResimAdi:String,yemekFiyat:Int,yemekSiparisAdet:Int,kullaniciAdi:String)
     func getFoods()
 }
 
 protocol PresenterToInteractorHomePageProtocol {
     var homePagePresenter:InteractorToPresenterHomePageProtocol?{get set}
-
+    func addFood(yemekAdi:String,yemekResimAdi:String,yemekFiyat:Int,yemekSiparisAdet:Int,kullaniciAdi:String)
     func getAllFoods()
     
 }

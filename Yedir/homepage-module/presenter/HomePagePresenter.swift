@@ -8,6 +8,10 @@
 import Foundation
 
 class HomePagePresenter:ViewToPresenterHomePageProtocol{
+    func add(yemekAdi: String, yemekResimAdi: String, yemekFiyat: Int, yemekSiparisAdet: Int, kullaniciAdi: String) {
+        homePageInteractor?.addFood(yemekAdi: yemekAdi, yemekResimAdi: yemekResimAdi, yemekFiyat: yemekFiyat, yemekSiparisAdet: yemekSiparisAdet, kullaniciAdi: kullaniciAdi)
+    }
+    
     var homePageView: PresenterToViewHomePageProtocol?
     
     var homePageInteractor: PresenterToInteractorHomePageProtocol?

@@ -8,7 +8,7 @@
 import UIKit
 import Kingfisher
 
-class HomePageVC: UIViewController {
+class HomePageVC: UIViewController,HucreProtocol {
     @IBOutlet weak var yemeklerCollectionView: UICollectionView!
     
     var homePagePresenterObject:ViewToPresenterHomePageProtocol?
@@ -34,8 +34,13 @@ class HomePageVC: UIViewController {
         HomePageRouter.createModule(ref: self)
         navigationController?.navigationBar.barStyle = .black
        
-        
     }
+    func buttonTiklandi(indexPath: IndexPath) {
+        print("button tıklandı")
+        let food = foodList[indexPath.row]
+        homePagePresenterObject?.add(yemekAdi: food.yemek_adi!, yemekResimAdi: food.yemek_resim_adi!, yemekFiyat: Int(food.yemek_fiyat!)!, yemekSiparisAdet: 1, kullaniciAdi: "mehmet_saltan")
+    }
+   
     override func viewWillAppear(_ animated: Bool) {
         homePagePresenterObject?.getFoods()
       }
@@ -75,13 +80,16 @@ extension HomePageVC:UICollectionViewDelegate,UICollectionViewDataSource{
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "yemekHucre", for: indexPath) as! FoodCollectionViewCell
         cell.yemekAdiLabel.text = food.yemek_adi!
         cell.yemekFiyatLabel.text = "\(food.yemek_fiyat!) ₺"
+        cell.hucreProtocol = self  //Yetkilendirdik
+        cell.indexPath = indexPath //Yetkilendirdik
         if let url = URL(string: "http://kasimadalan.pe.hu/yemekler/resimler/\(food.yemek_resim_adi!)"){
                    DispatchQueue.main.async {
                        cell.yemekResimImageView.kf.setImage(with: url)
                    }
                }
         cell.view.layer.cornerRadius = 16
-        cell.sepeteEkleBtn.layer.cornerRadius = 32
+      
+       // cell.sepeteEkleBtn.layer.cornerRadius = 32
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
