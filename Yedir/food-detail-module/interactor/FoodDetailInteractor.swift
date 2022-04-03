@@ -16,12 +16,11 @@ class FoodDetailInteractor:PresenterToInteractorFoodDetailProtocol{
                 if let data = response.data{
                     do{
                         if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String:Any]{
-                            print(json)
-                            print(data)
+                        
                         
                         }
                     }catch{
-                        print(String(describing: error))
+                        
                     }
                 }
             }

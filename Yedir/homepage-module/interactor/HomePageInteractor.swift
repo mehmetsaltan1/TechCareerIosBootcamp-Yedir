@@ -11,10 +11,11 @@ import Firebase
 class HomePageInteractor:PresenterToInteractorHomePageProtocol{
     var homePagePresenter: InteractorToPresenterHomePageProtocol?
     var refYemekler = Database.database().reference().child("yemekler")
+    var gYemekList = [Foods]()
+    var gYemekAciklamaList = [FoodsDescriptions]()
     func getAllFoods() {
          print("tetiklendi")
-        var gYemekList = [Foods]()
-        var gYemekAciklamaList = [FoodsDescriptions]()
+        
     AF.request("http://kasimadalan.pe.hu/yemekler/tumYemekleriGetir.php",method: .get).response { response in
             if let data = response.data{
                 print("1inci ife girdi")
@@ -22,7 +23,7 @@ class HomePageInteractor:PresenterToInteractorHomePageProtocol{
                     let cevap = try JSONDecoder().decode(FoodsResponse.self, from: data)
                     if let gelenListe = cevap.yemekler{
                         print("2inci ife girdi")
-                        gYemekList = gelenListe
+                        self.gYemekList = gelenListe
                     }
                     else {
                         print("null geldi")
@@ -45,8 +46,10 @@ class HomePageInteractor:PresenterToInteractorHomePageProtocol{
                     }
                 }
             }
-            self.homePagePresenter?.sendDataToPresenter(foodsList: gYemekList,foodDescriptionList: liste)
+            self.homePagePresenter?.sendDataToPresenter(foodsList: self.gYemekList,foodDescriptionList: liste)
+    
         })
+        
     }
     
     
