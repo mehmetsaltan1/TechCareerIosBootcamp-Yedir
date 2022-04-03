@@ -13,6 +13,7 @@ class HomePageVC: UIViewController {
     
     var homePagePresenterObject:ViewToPresenterHomePageProtocol?
     var foodList = [Foods]()
+    var foodDescriptionList = [FoodsDescriptions]()
     override func viewDidLoad() {
         super.viewDidLoad()
         yemeklerCollectionView.delegate = self
@@ -38,15 +39,31 @@ class HomePageVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         homePagePresenterObject?.getFoods()
       }
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue.identifier == "toDetail"{
+                let gidenveri = sender as? GonderilecekVeri
+                let destinationVC = segue.destination as! FoodDetailVC
+                destinationVC.gelenYemek = gidenveri?.food
+                destinationVC.gelenYemekAciklama = gidenveri?.foodDesc
+                
+            }
+        }
 }
 extension HomePageVC:PresenterToViewHomePageProtocol{
-    func sendDataToView(foodsList: Array<Foods>) {
+    func sendDataToView(foodsList: Array<Foods>,foodDescriptionList:Array<FoodsDescriptions>) {
         self.foodList = foodsList
+        self.foodDescriptionList = foodDescriptionList
+        self.foodDescriptionList.sort{
+            $0.food_id ?? 0  < $1.food_id ?? 1
+        }
         DispatchQueue.main.async {
             self.yemeklerCollectionView.reloadData()
         }
     }
+}
+struct GonderilecekVeri {
+    var food:Foods
+    var foodDesc:FoodsDescriptions
 }
 extension HomePageVC:UICollectionViewDelegate,UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -67,5 +84,12 @@ extension HomePageVC:UICollectionViewDelegate,UICollectionViewDataSource{
         cell.sepeteEkleBtn.layer.cornerRadius = 32
         return cell
     }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+           let food = self.foodList[indexPath.row]
+        let foodDesc = self.foodDescriptionList[indexPath.row]
+        print(indexPath.row)
+         let termData = GonderilecekVeri(food: food, foodDesc: foodDesc)
+        performSegue(withIdentifier: "toDetail", sender: termData)
+       }
     
 }

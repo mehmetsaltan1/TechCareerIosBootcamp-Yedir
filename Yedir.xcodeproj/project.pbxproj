@@ -36,6 +36,11 @@
 		9BA813DA27F6110F00DD0533 /* SepetYemeklerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA813D927F6110F00DD0533 /* SepetYemeklerTableViewCell.swift */; };
 		9BA813DC27F88A6700DD0533 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BA813DB27F88A6600DD0533 /* GoogleService-Info.plist */; };
 		9BA813DF27F88E0500DD0533 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 9BA813DE27F88E0500DD0533 /* FirebaseDatabase */; };
+		9BA813E127F8934700DD0533 /* FoodsDescriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA813E027F8934700DD0533 /* FoodsDescriptions.swift */; };
+		9BA813E327F8975300DD0533 /* FoodDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA813E227F8975300DD0533 /* FoodDetailProtocols.swift */; };
+		9BA813E527F89A5F00DD0533 /* FoodDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA813E427F89A5F00DD0533 /* FoodDetailInteractor.swift */; };
+		9BA813E727F8F16500DD0533 /* FoodDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA813E627F8F16500DD0533 /* FoodDetailPresenter.swift */; };
+		9BA813E927F8F1C700DD0533 /* FoodDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA813E827F8F1C700DD0533 /* FoodDetailRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +91,11 @@
 		9BA813D327F4DA8300DD0533 /* FoodCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCollectionViewCell.swift; sourceTree = "<group>"; };
 		9BA813D927F6110F00DD0533 /* SepetYemeklerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepetYemeklerTableViewCell.swift; sourceTree = "<group>"; };
 		9BA813DB27F88A6600DD0533 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9BA813E027F8934700DD0533 /* FoodsDescriptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsDescriptions.swift; sourceTree = "<group>"; };
+		9BA813E227F8975300DD0533 /* FoodDetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailProtocols.swift; sourceTree = "<group>"; };
+		9BA813E427F89A5F00DD0533 /* FoodDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailInteractor.swift; sourceTree = "<group>"; };
+		9BA813E627F8F16500DD0533 /* FoodDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailPresenter.swift; sourceTree = "<group>"; };
+		9BA813E827F8F1C700DD0533 /* FoodDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +223,7 @@
 		9B2AA2F627EF5A3800BC977F /* protocols */ = {
 			isa = PBXGroup;
 			children = (
+				9BA813E227F8975300DD0533 /* FoodDetailProtocols.swift */,
 			);
 			path = protocols;
 			sourceTree = "<group>";
@@ -220,6 +231,7 @@
 		9B2AA2F727EF5A3E00BC977F /* interactor */ = {
 			isa = PBXGroup;
 			children = (
+				9BA813E427F89A5F00DD0533 /* FoodDetailInteractor.swift */,
 			);
 			path = interactor;
 			sourceTree = "<group>";
@@ -227,6 +239,7 @@
 		9B2AA2F827EF5A4600BC977F /* presenter */ = {
 			isa = PBXGroup;
 			children = (
+				9BA813E627F8F16500DD0533 /* FoodDetailPresenter.swift */,
 			);
 			path = presenter;
 			sourceTree = "<group>";
@@ -234,6 +247,7 @@
 		9B2AA2F927EF5A5000BC977F /* router */ = {
 			isa = PBXGroup;
 			children = (
+				9BA813E827F8F1C700DD0533 /* FoodDetailRouter.swift */,
 			);
 			path = router;
 			sourceTree = "<group>";
@@ -285,6 +299,7 @@
 				9B2AA30827F039AD00BC977F /* FoodsResponse.swift */,
 				9B2AA30A27F039BA00BC977F /* CartFoods.swift */,
 				9B2AA30C27F039CB00BC977F /* CartFoodsResponse.swift */,
+				9BA813E027F8934700DD0533 /* FoodsDescriptions.swift */,
 			);
 			path = entity;
 			sourceTree = "<group>";
@@ -498,7 +513,9 @@
 				9B2AA30927F039AD00BC977F /* FoodsResponse.swift in Sources */,
 				9B3E63E327ECD654006686DC /* AppDelegate.swift in Sources */,
 				9B2AA30427F038CB00BC977F /* HomePageProtocols.swift in Sources */,
+				9BA813E727F8F16500DD0533 /* FoodDetailPresenter.swift in Sources */,
 				9B3E63E527ECD654006686DC /* SceneDelegate.swift in Sources */,
+				9BA813E327F8975300DD0533 /* FoodDetailProtocols.swift in Sources */,
 				9B2AA31327F03C2A00BC977F /* HomePageInteractor.swift in Sources */,
 				9BA813D227F377A500DD0533 /* CartInteractor.swift in Sources */,
 				9B2AA30727F0399900BC977F /* Foods.swift in Sources */,
@@ -506,11 +523,14 @@
 				9B2AA2EF27EF599700BC977F /* HomePageVC.swift in Sources */,
 				9B2AA30227EF5AB300BC977F /* FoodDetailVC.swift in Sources */,
 				9B2AA30027EF5A9F00BC977F /* CartPageVC.swift in Sources */,
+				9BA813E527F89A5F00DD0533 /* FoodDetailInteractor.swift in Sources */,
+				9BA813E127F8934700DD0533 /* FoodsDescriptions.swift in Sources */,
 				9B2AA31127F03B0F00BC977F /* HomePagePresenter.swift in Sources */,
 				9B2AA30D27F039CB00BC977F /* CartFoodsResponse.swift in Sources */,
 				9BA813CE27F376D900DD0533 /* CartPresenter.swift in Sources */,
 				9BA813CC27F375F300DD0533 /* CartProtocols.swift in Sources */,
 				9B2AA30F27F03A4400BC977F /* HomePageRouter.swift in Sources */,
+				9BA813E927F8F1C700DD0533 /* FoodDetailRouter.swift in Sources */,
 				9BA813D427F4DA8300DD0533 /* FoodCollectionViewCell.swift in Sources */,
 				9B2AA30B27F039BA00BC977F /* CartFoods.swift in Sources */,
 			);

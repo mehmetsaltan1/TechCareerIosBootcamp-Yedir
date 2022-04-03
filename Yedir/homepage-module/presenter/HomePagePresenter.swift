@@ -19,8 +19,8 @@ class HomePagePresenter:ViewToPresenterHomePageProtocol{
     
 }
 extension HomePagePresenter : InteractorToPresenterHomePageProtocol{
-    func sendDataToPresenter(foodsList: Array<Foods>) {
-        homePageView?.sendDataToView(foodsList: foodsList)
+    func sendDataToPresenter(foodsList: Array<Foods>,foodDescriptionList:Array<FoodsDescriptions>) {
+        homePageView?.sendDataToView(foodsList: foodsList,foodDescriptionList: foodDescriptionList)
     }
     
 }
